@@ -21,6 +21,7 @@ theme:
         name: Switch to light mode
   
   features:
+    # - toc.integrate
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
@@ -36,14 +37,14 @@ theme:
 
 extra_css:
   - assets/stylesheets/extra.css
-  - https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css
+  - assets/stylesheets/dataTables.min.css
 
 extra_javascript:
   # - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   # - https://code.jquery.com/jquery-3.7.0.min.js
-  - https://cdn.datatables.net/2.2.2/js/dataTables.min.js
+  - assets/javascripts/dataTables.min.js
   - assets/javascripts/extra.js
 
 markdown_extensions:
@@ -83,12 +84,5 @@ extra:
 nav:
   - Overview: 
     - Overview: index.md
-  - License: license.md
-
-  # - Getting Started:
-  #   - Installation: getting_started.md
-  #   - Verification: verification.md
-  
-  # - Tutorials: tutorials/index.md
-  # - Benchmarks: benchmarks/ale.md
-  
+    - License: license.md
+  - Committee: committee.md

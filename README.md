@@ -1,2 +1,2 @@
 # Arena
- An arena for reinforcement learning agents.
+An arena for reinforcement learning agents.

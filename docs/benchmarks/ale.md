@@ -5,42 +5,38 @@ hide:
 ---
 
 # **Arcade Learning Environment**
+## **Atari-5**
+<div class="card-container atari-5">
+<script src="../../assets/javascripts/extra.js"></script>
 
-<div class="card-container">
-    <!-- 动态生成卡片 -->
-    <script>
-        const cardData = [
-            { img: "assets/images/atari.gif", title: "Pong", desc: "经典乒乓球游戏。", link: "./pong" },
-            { img: "assets/images/atari.gif", title: "Breakout", desc: "打砖块游戏。", link: "./breakout" },
-            { img: "assets/images/atari.gif", title: "Space Invaders", desc: "经典太空射击游戏。", link: "./space_invaders" },
-            { img: "assets/images/atari.gif", title: "Pac-Man", desc: "经典吃豆人游戏。", link: "./pac_man" },
-            { img: "assets/images/atari.gif", title: "Qbert", desc: "益智跳跃游戏。", link: "./qbert" },
-            { img: "assets/images/atari.gif", title: "Seaquest", desc: "海底射击游戏。", link: "./seaquest" },
-            { img: "assets/images/atari.gif", title: "Asteroids", desc: "太空射击小行星游戏。", link: "./asteroids" },
-            { img: "assets/images/atari.gif", title: "Ms. Pac-Man", desc: "吃豆人变种游戏。", link: "./ms_pac_man" },
-            { img: "assets/images/atari.gif", title: "Montezuma's Revenge", desc: "冒险解谜游戏。", link: "./montezumas_revenge" },
-            { img: "assets/images/atari.gif", title: "Enduro", desc: "赛车竞速游戏。", link: "./enduro" },
-            { img: "assets/images/atari.gif", title: "Frostbite", desc: "冰雪冒险游戏。", link: "./frostbite" },
-            { img: "assets/images/atari.gif", title: "River Raid", desc: "空中射击游戏。", link: "./river_raid" }
-        ];
+<script>
+    const cardDataAtari5 = [
+        { img: "../../assets/images/ale/battle_zone.gif", title: "BattleZone", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(18)", link: "./battle_zone" },
+        { img: "../../assets/images/ale/double_dunk.gif", title: "DoubleDunk", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(18)", link: "./double_dunk" },
+        { img: "../../assets/images/ale/name_this_game.gif", title: "NameThisGame", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(6)", link: "./name_this_game" },
+        { img: "../../assets/images/ale/phoenix.gif", title: "Phoenix", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(8)", link: "./phoenix" },
+        { img: "../../assets/images/ale/qbert.gif", title: "Qbert", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(6)", link: "./qbert" }
+    ];
 
-        const cardContainer = document.querySelector('.card-container');
+    // 生成 Atari-5 的卡片
+    generateCards('.card-container.atari-5', cardDataAtari5);
+</script>
+</div>
 
-        cardData.forEach(data => {
-            const card = document.createElement('a');
-            card.className = 'env_card';
-            card.href = data.link; 
-            card.target = "_self"; 
+## **Atari-10↑**
+<div class="card-container atari-10">
+<script src="../../assets/javascripts/extra.js"></script>
 
-            card.innerHTML = `
-                <img src="${data.img}" alt="">
-                <div class="card-content">
-                    <h2>${data.title}</h2>
-                    <p>${data.desc}</p>
-                </div>
-            `;
+<script>
+    const cardDataAtari10 = [
+        { img: "../../assets/images/ale/amidar.gif", title: "Amidar", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(10)", link: "./amidar" },
+        { img: "../../assets/images/ale/bowling.gif", title: "Bowling", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(6)", link: "./bowling" },
+        { img: "../../assets/images/ale/frostbite.gif", title: "Frostbite", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(18)", link: "./frostbite" },
+        { img: "../../assets/images/ale/kung_fu_master.gif", title: "Kung Fu Master", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(14)", link: "./kung_fu_master" },
+        { img: "../../assets/images/ale/riverraid.gif", title: "River Raid", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(18)", link: "./riverraid" }
+    ];
 
-            cardContainer.appendChild(card);
-        });
-    </script>
+    // 生成 Atari-5 的卡片
+    generateCards('.card-container.atari-10', cardDataAtari10);
+</script>
 </div>

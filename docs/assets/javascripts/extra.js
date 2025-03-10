@@ -14,8 +14,8 @@ function loadDataTable(jsonFilePath, tableId = 'data-table') {
                     { data: 'Training Steps', className: 'dt-left' },
                     { data: 'Parameters', className: 'dt-left' },
                     { data: 'Score', className: 'dt-left' },
+                    { data: 'Code', className: 'dt-left' },
                     { data: 'Timestamp', className: 'dt-left' },
-                    { data: 'Code', className: 'dt-left' }
                 ]
             });
         })
@@ -27,3 +27,30 @@ function loadDataTable(jsonFilePath, tableId = 'data-table') {
 //     const jsonFilePath = 'data.json'; // Path to your JSON file
 //     loadDataTable(jsonFilePath, 'data-table'); // Call the function
 // });
+
+function generateCards(containerSelector, cardData) {
+    const cardContainer = document.querySelector(containerSelector);
+
+    if (!cardContainer) {
+        console.error(`Container not found: ${containerSelector}`);
+        return;
+    }
+
+    cardData.forEach(data => {
+        const card = document.createElement('a');
+        card.className = 'env_card';
+        card.href = data.link; 
+        card.target = "_self"; 
+
+        card.innerHTML = `
+            <img src="${data.img}" alt="">
+            <div class="card-content">
+                <h2>${data.title}</h2>
+                <p>${data.os}</p>
+                <p>${data.as}</p>
+            </div>
+        `;
+
+        cardContainer.appendChild(card);
+    });
+}
