@@ -1,0 +1,26 @@
+[
+    {
+        "Team ID": "Team_1",
+        "Training Steps": 5432,
+        "Parameters": 6000000,
+        "Score": 92.34,
+        "Timestamp": "2023-10-01T12:34:56Z",
+        "Code": "A123"
+    },
+    {
+        "Team ID": "Team_2",
+        "Training Steps": 8765,
+        "Parameters": 3000000,
+        "Score": 88.76,
+        "Timestamp": "2023-10-02T14:20:10Z",
+        "Code": "B456"
+    },
+    {
+        "Team ID": "Team_3",
+        "Training Steps": 2345,
+        "Parameters": 8000000,
+        "Score": 95.12,
+        "Timestamp": "2023-10-03T09:15:30Z",
+        "Code": "C789"
+    }
+]

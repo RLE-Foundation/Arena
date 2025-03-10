@@ -1,0 +1,94 @@
+site_name: "⚔️Reinforcement Learning Agent Arena⚔️"
+site_url: https://arena.rllte.dev/
+copyright: Copyright &copy; 2025 Reinforcement Learning Evolution Foundation
+theme:
+  name: material
+  logo: assets/images/logo_horizontal.svg
+  favicon: assets/images/rllte-favicon.png
+  palette:
+    - scheme: white
+      primary: white
+      accent: white
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+        
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - content.code.select
+    - content.code.copy
+    - content.code.select
+
+extra_css:
+  - assets/stylesheets/extra.css
+  - https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css
+
+extra_javascript:
+  # - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - https://code.jquery.com/jquery-3.7.0.min.js
+  - https://cdn.datatables.net/2.2.2/js/dataTables.min.js
+  - assets/javascripts/extra.js
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+repo_url: https://github.com/RLE-Foundation/Arena
+repo_name: RLE-Foundation/Arena
+
+extra:
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/RLE-Foundation/Arena
+    - icon: fontawesome/solid/paper-plane
+      link: mingqi.yuan@connect.polyu.hk
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/rllte-arena/
+  
+nav:
+  - Overview: 
+    - Overview: index.md
+  - License: license.md
+
+  # - Getting Started:
+  #   - Installation: getting_started.md
+  #   - Verification: verification.md
+  
+  # - Tutorials: tutorials/index.md
+  # - Benchmarks: benchmarks/ale.md
+  
