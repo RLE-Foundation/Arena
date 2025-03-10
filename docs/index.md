@@ -92,21 +92,21 @@ If you use **RLLTE Arena** in your research, please cite this project like this:
 # **Powered by**
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_polyu.png" alt="Image 1" style="max-width: 100%; height: auto;">
+    <img src="assets/images/logos/logo_polyu.svg" alt="Image 1" style="height: 100px; width: auto;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_sjtu.svg" alt="Image 2" style="max-width: 100%; height: auto;">
+    <img src="assets/images/logos/logo_sjtu.svg" alt="Image 2" style="height: 100px; width: auto;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_eias.png" alt="Image 3" style="max-width: 100%; height: auto;">
+    <img src="assets/images/logos/logo_eias.png" alt="Image 3" style="height: 100px; width: auto;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_idt.png" alt="Image 4" style="max-width: 100%; height: auto;">
+    <img src="assets/images/logos/logo_idt.png" alt="Image 4" style="height: auto; max-width: 100%;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_ustc.svg" alt="Image 5" style="max-width: 100%; height: auto;">
+    <img src="assets/images/logos/logo_ustc.svg" alt="Image 5" style="height: 100px; width: auto;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_purdue.svg" alt="Image 6" style="max-width: 100%; height: auto;">
+    <img src="assets/images/logos/logo_purdue.svg" alt="Image 6" style="height: 100px; width: auto;">
   </div>
 </div>
