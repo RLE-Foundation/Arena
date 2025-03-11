@@ -3,20 +3,42 @@
  * @param {string} jsonFilePath - Path to the JSON file
  * @param {string} tableId - ID of the table element
  */
-function loadDataTable(jsonFilePath, tableId = 'data-table') {
+function loadDataTable(jsonFilePath, version, environment, tableId = 'data-table') {
     fetch(jsonFilePath)
         .then(response => response.json())
         .then(data => {
-            $(`#${tableId}`).DataTable({
-                data: data,
+            const versionData = data[version];
+            if (!versionData) {
+                console.error(`Version "${version}" not found in JSON file.`);
+                return;
+            }
+
+            const environmentData = versionData[environment];
+            if (!environmentData) {
+                console.error(`Environment "${environment}" not found for version "${version}".`);
+                return;
+            }
+
+            const table = $(`#${tableId}`).DataTable({
+                data: environmentData,
                 columns: [
-                    { data: 'Team ID', className: 'dt-left'  },
+                    { data: 'Team', className: 'dt-left'  },
+                    { data: 'Name', className: 'dt-left'  },
+                    { data: 'Version', className: 'dt-left'  },
                     { data: 'Training Steps', className: 'dt-left' },
                     { data: 'Parameters', className: 'dt-left' },
-                    { data: 'Score', className: 'dt-left' },
-                    { data: 'Code', className: 'dt-left' },
-                    { data: 'Timestamp', className: 'dt-left' },
-                ]
+                    { data: 'Mean', className: 'dt-left' },
+                    { 
+                        data: 'Code', 
+                        className: 'dt-left',
+                        render: function(data) {
+                            // 将 Code 转换为超链接
+                            return `<a href="${data}" target="_blank">Link</a>`;
+                        }
+                    },
+                    { data: 'Date', className: 'dt-left' },
+                ],
+                order: [[5, 'desc']],
             });
         })
         .catch(error => console.error('Error loading JSON:', error));
