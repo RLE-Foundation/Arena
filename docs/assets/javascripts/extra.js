@@ -20,6 +20,7 @@ function loadDataTable(jsonFilePath, version, environment, tableId = 'data-table
             }
 
             const table = $(`#${tableId}`).DataTable({
+                pageLength: 20,
                 data: environmentData,
                 columns: [
                     { data: 'Team', className: 'dt-left'  },
