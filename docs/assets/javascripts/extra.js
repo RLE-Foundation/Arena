@@ -77,3 +77,24 @@ function generateCards(containerSelector, cardData) {
         cardContainer.appendChild(card);
     });
 }
+
+function createCards(cardData, containerSelector) {
+    const cardContainer = document.querySelector(containerSelector);
+
+    cardData.forEach(data => {
+        const card = document.createElement('a');
+        card.className = 'card';
+        card.href = data.link;
+        card.target = "_self";
+
+        card.innerHTML = `
+            <img src="${data.img}" alt="">
+            <div class="card-content">
+                <h2>${data.title}</h2>
+                <p>${data.desc}</p>
+            </div>
+        `;
+
+        cardContainer.appendChild(card);
+    });
+}

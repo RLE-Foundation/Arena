@@ -6,7 +6,25 @@ hide:
 
 # 🏆🏆🏆 **Leaderboard**
 
+## **New Flagship**
+<div class="mw-card-container">
+<script src="../../assets/javascripts/extra.js"></script>
+    <!-- 动态生成卡片 -->
+    <script>
+        const cardMWData = [
+            { img: "assets/images/benchmark/mlgym.png", 
+              title: "MLGym", 
+              desc: "The first Gym environment for ML tasks, enabling research on RL algorithms for training such agents.",
+              link: "benchmarks/mlgym"}
+        ];
+        createCards(cardMWData, '.mw-card-container');
+    </script>
+</div>
+
+## **Most Popular Ones**
+
 <div class="card-container">
+<script src="../../assets/javascripts/extra.js"></script>
     <!-- 动态生成卡片 -->
     <script>
         const cardData = [
@@ -23,7 +41,7 @@ hide:
               desc: "Continuous control tasks powered by MuJoCo physics engine.",
               link: "benchmarks/dmc"},
             { img: "assets/images/benchmark/minedojo.gif", 
-              title: "Minedojo", 
+              title: "MineDojo", 
               desc: "Open-ended exploration tasks built on Minecraft.",
               link: "benchmarks/mc"},
             { img: "assets/images/benchmark/minigrid.gif", 
@@ -49,27 +67,9 @@ hide:
             { img: "assets/images/benchmark/d4rl.gif", 
               title: "D4RL", 
               desc: "An open-source benchmark for offline RL.",
-              link: "benchmarks/d4rl"}
+              link: "benchmarks/d4rl"},
         ];
-
-        const cardContainer = document.querySelector('.card-container');
-
-        cardData.forEach(data => {
-            const card = document.createElement('a');
-            card.className = 'card';
-            card.href = data.link;
-            card.target = "_self";
-
-            card.innerHTML = `
-                <img src="${data.img}" alt="">
-                <div class="card-content">
-                    <h2>${data.title}</h2>
-                    <p>${data.desc}</p>
-                </div>
-            `;
-
-            cardContainer.appendChild(card);
-        });
+        createCards(cardData, '.card-container');
     </script>
     <br>
 </div>
@@ -83,7 +83,7 @@ If you use **RLLTE Arena** in your research, please cite this project like this:
 ```bibtex
 @article{yuan2025arena,
   title={Arena}, 
-  author={Mingqi Yuan and Qi Wang and Bo Li and Xin Jin and Wenjun Zeng},
+  author={Mingqi Yuan and Qi Wang and Yulai Zhao and Yang Xu and Zequn Zhang and Bo Li and Xin Jin and Wenjun Zeng},
   year={2025},
   journal={arXiv preprint arXiv:}
 }
@@ -107,9 +107,9 @@ If you use **RLLTE Arena** in your research, please cite this project like this:
     <img src="assets/images/logos/logo_princeton.png" alt="Image 5" style="height: 100px; width: auto;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_purdue.svg" alt="Image 6" style="height: 100px; width: auto;">
+    <img src="assets/images/logos/logo_ustc.svg" alt="Image 5" style="height: 100px; width: auto;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_ustc.svg" alt="Image 5" style="height: 100px; width: auto;">
+    <img src="assets/images/logos/logo_purdue.svg" alt="Image 6" style="height: 100px; width: auto;">
   </div>
 </div>
