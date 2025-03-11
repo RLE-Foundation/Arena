@@ -18,7 +18,6 @@ hide:
         { img: "../../assets/images/ale/qbert.gif", title: "Qbert", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(6)", link: "./qbert" }
     ];
 
-    // 生成 Atari-5 的卡片
     generateCards('.card-container.atari-5', cardDataAtari5);
 </script>
 </div>
@@ -36,7 +35,6 @@ hide:
         { img: "../../assets/images/ale/riverraid.gif", title: "River Raid", os: "OS: Box(0, 255, (210, 160, 3), uint8)", as: "AS: Discrete(18)", link: "./riverraid" }
     ];
 
-    // 生成 Atari-5 的卡片
     generateCards('.card-container.atari-10', cardDataAtari10);
 </script>
 </div>

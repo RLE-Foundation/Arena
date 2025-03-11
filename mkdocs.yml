@@ -82,7 +82,12 @@ extra:
       link: https://pypi.org/project/rllte-arena/
   
 nav:
-  - Overview: 
-    - Overview: index.md
-    - License: license.md
+  - Leaderboard: 
+    - Home: index.md
+    - Upload Your Agent: /#upload-your-agent
+    - Cite Us: /#cite-us
+    - Powered by: /#powered-by
+  - Arena: arena.md
   - Committee: committee.md
+  - License: license.md
+  - Contact: contact.md

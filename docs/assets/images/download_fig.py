@@ -18,8 +18,8 @@ def download_gif(url, save_path):
 # # 保存路径
 # save_path = "alien.gif"
 
-for env in ['riverraid']:
-    gif_url = f"https://ale.farama.org/_images/{env}.gif"
-    save_path = f"assets/images/ale/{env}.gif"
+for env in ['bigfish', 'caveflyer', 'chaser', 'climber', 'dodgeball', 'fruitbot', 'heist', 'jumper', 'leaper', 'maze', 'miner', 'ninja', 'plunder', 'starpilot']:
+    gif_url = f"https://github.com/openai/procgen/blob/master/screenshots/{env}.png"
+    save_path = f"assets/images/procgen/{env}.png"
     download_gif(gif_url, save_path)
 
