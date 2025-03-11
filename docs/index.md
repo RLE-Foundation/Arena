@@ -90,7 +90,7 @@ If you use **RLLTE Arena** in your research, please cite this project like this:
 ```
 
 # 🔥🔥🔥 **Powered by**
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: left;">
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
     <img src="assets/images/logos/logo_polyu.svg" alt="Image 1" style="height: 100px; width: auto;">
   </div>
@@ -104,9 +104,12 @@ If you use **RLLTE Arena** in your research, please cite this project like this:
     <img src="assets/images/logos/logo_idt.png" alt="Image 4" style="height: auto; max-width: 100%;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
-    <img src="assets/images/logos/logo_ustc.svg" alt="Image 5" style="height: 100px; width: auto;">
+    <img src="assets/images/logos/logo_princeton.png" alt="Image 5" style="height: 100px; width: auto;">
   </div>
   <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
     <img src="assets/images/logos/logo_purdue.svg" alt="Image 6" style="height: 100px; width: auto;">
+  </div>
+  <div style="flex: 0 0 30%; display: flex; justify-content: center; align-items: center;">
+    <img src="assets/images/logos/logo_ustc.svg" alt="Image 5" style="height: 100px; width: auto;">
   </div>
 </div>

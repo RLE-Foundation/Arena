@@ -10,7 +10,9 @@ The following members are listed in alphabetical order.
 - Prof. Zhibo Chen, *University of Science and Technology of China, China*
 
 ## **Executive Committee**
+- Liang Xu, *The Hong Kong Polytechnic University, China*
 - Mingqi Yuan, *The Hong Kong Polytechnic University, China*
 - Qi Wang, *Shanghai Jiaotong University, China*
 - Yang Xu, *Purdue University, USA*
+- Yulai Zhao, *Princeton University, USA*
 - Zequn Zhang, *University of Science and Technology of China, China*
