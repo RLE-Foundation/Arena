@@ -43,7 +43,7 @@ hide:
             { img: "assets/images/benchmark/minedojo.gif", 
               title: "MineDojo", 
               desc: "Open-ended exploration tasks built on Minecraft.",
-              link: "benchmarks/mc"},
+              link: "benchmarks/minedojo"},
             { img: "assets/images/benchmark/minigrid.gif", 
               title: "MiniGrid", 
               desc: "2D grid-world environments with goal-oriented tasks.",
