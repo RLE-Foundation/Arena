@@ -6,7 +6,7 @@ An arena for reinforcement learning agents.
 * Users can submit their models and compare their results on a variety of standard test sets.
 
 ## Upload Your Agent
-1. Visit [Arena](https://arena.rllte.dev/arena/).
+1. Visit [Arena](https://arena.rllte.dev/arena/);
 2. Select a benchmark, an environment, and a specific version;
 3. Enter your github username and the link to your code;
 4. Click "Submit" to evaluate your agent and get a unique ID;
