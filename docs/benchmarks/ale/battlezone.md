@@ -14,7 +14,7 @@ hide:
             <tr>
                 <th>Team</th>
                 <th>Name</th>
-                <th>Version</th>
+                <!-- <th>Version</th> -->
                 <th>Training Steps</th>
                 <th>Params</th>
                 <th>Score</th>
