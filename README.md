@@ -1,15 +1,15 @@
 [![GitHub issues](https://img.shields.io/github/issues/RLE-Foundation/Arena)](https://github.com/RLE-Foundation/Arena/issues) [![GitHub stars](https://img.shields.io/github/stars/RLE-Foundation/Arena)](https://github.com/RLE-Foundation/Arena/stargazers) [![GitHub forks](https://img.shields.io/github/forks/RLE-Foundation/Arena)](https://github.com/RLE-Foundation/Arena/network) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FRLE-Foundation%2FArena&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# Arena: A Leaderboard for Reinforcement Learning Agents.
+# Arena: A Leaderboard for Reinforcement Learning Agents
 An arena for reinforcement learning agents.
 * This project serves as a  reinforcement learning leaderboard to showcase the performance of different user-uploaded models across various Benchmarks. 
 * Users can submit their models and compare their results on a variety of standard test sets.
 
 ## Upload Your Agent
-1. Visit [Arena](https://arena.rllte.dev/arena/);
-2. Select a benchmark, an environment, and a specific version;
-3. Enter your github username and the link to your code;
-4. Click "Submit" to evaluate your agent and get a unique ID;
+1. Visit [Arena website](https://arena.rllte.dev/arena/).
+2. Select a benchmark, an environment, and a specific version.
+3. Enter your github username and the link to your code.
+4. Click "Submit" to evaluate your agent and get a unique ID.
 5. Check the [leaderboard](https://arena.rllte.dev/). 
 <!-- 
 Prepare Your Model: Make sure your model is trained on one of the supported Benchmarks.
