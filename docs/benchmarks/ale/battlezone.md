@@ -8,7 +8,7 @@ hide:
 ## **NoFrameskip-v4**
 ### Leaderboard
 <div>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="../../../assets/javascripts/jquery-3.7.0.min.js"></script>
     <table id="data-table" class="display" style="width:100%">
         <thead>
             <tr>
