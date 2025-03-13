@@ -25,7 +25,7 @@ function loadDataTable(jsonFilePath, version, environment, tableId = 'data-table
                 columns: [
                     { data: 'Team', className: 'dt-left'  },
                     { data: 'Name', className: 'dt-left'  },
-                    { data: 'Version', className: 'dt-left'  },
+                    // { data: 'Version', className: 'dt-left'  },
                     { data: 'Training Steps', className: 'dt-left' },
                     { data: 'Parameters', className: 'dt-left' },
                     { data: 'Mean', className: 'dt-left' },
