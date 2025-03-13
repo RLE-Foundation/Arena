@@ -11,19 +11,19 @@ hide:
 - Enter your github username and the link to your code;
 - Click "Submit" to evaluate your agent and get a unique ID; -->
 
-<iframe
+<!-- <iframe
 	src="https://rle-foundation-arena.hf.space"
 	frameborder="0"
 	width="100%"
 	height="800px"
 	style="padding: 0;"
-></iframe>
+></iframe> -->
 
 <!-- ## ⚠️⚠️⚠️ Notice -->
 
 <!-- # **Submission Guidelines** -->
 
-## **Step 1: Create a python file for model description**
+<!-- ## **Step 1: Create a python file for model description**
 
 - Write an `agent.py` to describe the model architecture, and make sure the model has an `.act()` function that accepts observations and generates actions. Please refer to [CleanRL](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/ppo_atari.py) to create a simple and elegant model architecture.
 ``` py
@@ -78,4 +78,4 @@ Compress the `agent.py` and the models into an `agent.zip` file.
 
 ## **Step 3: Model upload**
 - Fill out the submission form;
-- Click the `Submit` button and wait for the result.
+- Click the `Submit` button and wait for the result. -->
