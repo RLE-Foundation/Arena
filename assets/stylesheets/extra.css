@@ -1,0 +1,98 @@
+.md-content {
+    text-align: justify;
+}
+
+[data-md-color-scheme="rllte"] {
+    --md-primary-fg-color: rgb(0,83,214);
+    --md-accent-fg-color: rgb(0,83,174);
+    --md-typeset-a-color: rgb(0,83,214);
+  }  
+
+[data-md-color-scheme="white"] {
+  --md-primary-fg-color: rgb(255,255,255);
+  --md-accent-fg-color: rgb(0,83,174);
+  --md-typeset-a-color: rgb(0,83,214);
+  --md-default-fg-color--light: #000000de;
+}  
+
+.badge {
+  display: inline-block;
+  width: 220px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  padding: 12px 17px;border-radius: 8px;
+  margin: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* 卡片之间的间距 */
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 8px); /* 每行两个卡片，减去间距的一半 */
+  box-sizing: border-box; /* 防止padding影响宽度 */
+  text-decoration: none; /* 去掉链接的下划线 */
+  color: inherit; /* 继承文字颜色 */
+  transition: transform 0.2s, box-shadow 0.2s; /* 添加动画效果 */
+}
+
+.env_card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 11px); /* 每行两个卡片，减去间距的一半 */
+  box-sizing: border-box; /* 防止padding影响宽度 */
+  text-decoration: none; /* 去掉链接的下划线 */
+  color: inherit; /* 继承文字颜色 */
+  transition: transform 0.2s, box-shadow 0.2s; /* 添加动画效果 */
+}
+
+.env_card:hover {
+  transform: translateY(-5px); /* 鼠标悬停时卡片上移 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 鼠标悬停时阴影加深 */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* 鼠标悬停时卡片上移 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 鼠标悬停时阴影加深 */
+}
+
+.card img {
+  width: 100px; /* 固定图片宽度 */
+  height: 100px; /* 固定图片高度 */
+  border-radius: 8px;
+  margin-right: 16px; /* 图片与文字的间距 */
+  object-fit: cover; /* 保持图片比例 */
+}
+
+.env_card img {
+  width: 100px; /* 固定图片宽度 */
+  height: 100px; /* 固定图片高度 */
+  border-radius: 8px;
+  margin-right: 16px; /* 图片与文字的间距 */
+}
+.card-content {
+  flex: 1;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-content p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #555;
+}
